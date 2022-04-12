@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+header {
+    clear: both;
+    width: 100%;
+    height: 80px;
+    
+    display: inline-flex;
+    background: linear-gradient(86deg, #f994f2, #448788, #cc96f0, rgb(253, 80, 80));
+    background-size: 600% 600%;
+
+    -webkit-animation: Navbackground 20s ease infinite;
+    -moz-animation: Navbackground 20s ease infinite;
+    animation: Navbackground 20s ease infinite;
+
+    position: relative;
+    align-items: stretch;
+    border-bottom: 10px solid black;
+}    
+
+@-webkit-keyframes Navbackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Navbackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Navbackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+header div img{
+    object-fit: scale-down;
+    height: 100%;
+    margin-left: 20%;
+    background: transparent;
+
+}
+
+.logo{
+    width: 5%;
+    background-color: transparent;
+    margin-right: 0;
+    padding-top: 10px;
+}
+.logo2{
+    width: 20%;
+    background-color: transparent;
+    margin-left: 0;
+    padding-top: 15px;
+}
+
+nav{
+    width: 75%;
+    float: left;
+    font-size: large;
+    text-align: left;
+    padding-top: 15px;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 2% 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    float: right;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color:rgb(11, 114, 152);
+    font-weight: bold;
+}    
+
+body {
+    color: rgb(138, 9, 134);
+    background: linear-gradient(270deg, #fcf9fc, #a4fcfe, #e7cdf9);
+    background-size:auto;
+
+}
+
+main {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 100px;
+    position: relative;
+}
+
+
+.formulario {
+    border: 10px black;
+    border-color: black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th, td {
+    border-color: black;
+    padding: 20px;
+  }
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px
+}
+
+.galeria {
+    display: grid;
+    grid-template-areas:
+    "img01 img02"
+    "img01 img03"
+    "img04 img06"
+    "img05 img06"
+    "img07 img08"; 
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    margin: 5%;
+    
+}
+
+.galeria img {
+
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  border-radius: 50px;
+}
+
+.img01 { grid-area: img01;}
+.img02 { grid-area: img02; }
+.img03 { grid-area: img03; }
+.img04 { grid-area: img04; }
+.img05 { grid-area: img05; }
+.img06 { grid-area: img06; }
+.img07 { grid-area: img07; }
+.img08 { grid-area: img08; }
+
+.galeria::after{
+    content: "";
+    display: block;
+}
+
+.resenas_sum {
+    display: grid;
+    grid-template-areas:
+    "area1 area7"
+    "area2 area7"
+    "area6 area3"
+    "area5 area4";
+    position: relative;
+    align-items: center;
+    grid-gap: 30px;
+    margin: 5%;
+}
+
+.resenas_sum div p {
+    font-size: xx-large;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.resena001 {grid-area: area1;}
+.resena002 {grid-area: area2;}
+.resena003 {grid-area: area3;}
+.resena004 {grid-area: area4;}
+.imgResena001 {grid-area: area5;}
+.imgResena002 {grid-area: area6;}
+.imgResena003 {grid-area: area7;}
+
+.resenas_sum div img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
