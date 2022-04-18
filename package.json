@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "My first package. This is for the html/css curse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeri1991/html-coderhouse.git"
+  },
+  "keywords": [
+    "html_css",
+    "draggearte",
+    "kanvas_lion"
+  ],
+  "author": "jonathan_ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeri1991/html-coderhouse/issues"
+  },
+  "homepage": "https://github.com/jeri1991/html-coderhouse#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
